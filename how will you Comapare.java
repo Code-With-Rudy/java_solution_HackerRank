@@ -2,7 +2,6 @@ import java.util.*;
 
 public class Arithmetic {
 
-    // Sum integers
     public Integer sum(Integer[] ints) {
         int total = 0;
         for (Integer num : ints) {
@@ -11,7 +10,7 @@ public class Arithmetic {
         return total;
     }
 
-    // Concatenate strings
+    
     public String sum(String[] strs) {
         StringBuilder result = new StringBuilder();
         for (String str : strs) {
@@ -24,14 +23,13 @@ public class Arithmetic {
         Scanner sc = new Scanner(System.in);
         Arithmetic a = new Arithmetic();
 
-        // Read number of test cases
         int T = Integer.parseInt(sc.nextLine());
 
         for (int t = 0; t < T; t++) {
             String line = sc.nextLine().trim();
             String[] tokens = line.split(" ");
 
-            // Check if it's integers or strings
+            
             boolean isInteger = true;
             for (String token : tokens) {
                 if (!token.matches("\\d+")) {
